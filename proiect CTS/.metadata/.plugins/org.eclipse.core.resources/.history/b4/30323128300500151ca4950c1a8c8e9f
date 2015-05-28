@@ -1,0 +1,9 @@
+package ro.ase.csie.cts.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cadou {
+	 private List<Produs> produse = new ArrayList<Produs>();	
+
+}

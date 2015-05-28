@@ -1,0 +1,9 @@
+package ro.ase.csie.cts.builder;
+
+public class Cutie implements Ambalaj {
+	@Override
+	   public String ambalaj() {
+	      return "Cutie";
+	   }
+
+}

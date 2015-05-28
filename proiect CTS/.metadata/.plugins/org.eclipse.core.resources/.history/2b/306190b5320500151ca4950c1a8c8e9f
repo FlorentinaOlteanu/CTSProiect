@@ -1,0 +1,6 @@
+package ro.ase.csie.cts.builder;
+
+public interface Ambalaj {
+	public String ambalaj();
+
+}

@@ -1,0 +1,11 @@
+package ro.ase.csie.cts.builder;
+
+public abstract class Parfum implements Produs{
+	
+	public Ambalaj ambalaj() {
+	      return new Sticla();
+	   }
+
+	   public abstract float pret();
+
+}

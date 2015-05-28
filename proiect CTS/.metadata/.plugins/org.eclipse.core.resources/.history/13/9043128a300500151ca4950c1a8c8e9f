@@ -1,0 +1,22 @@
+package ro.ase.csie.cts.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cadou {
+	 private List<Produs> produse = new ArrayList<Produs>();
+	 
+	 public void adaugaProdu(Produs produs){
+	      produse.add(produs);
+	   }
+	 
+	 public float costCadou(){
+	      float cost = 0.0f;
+	      
+	      for (Produs produs : produse) {
+	         cost += produs.pret();
+	      }		
+	      return cost;
+	   }
+
+}

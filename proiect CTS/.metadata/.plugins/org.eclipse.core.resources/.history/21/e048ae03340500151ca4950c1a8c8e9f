@@ -1,0 +1,18 @@
+package ro.ase.csie.cts.builder;
+
+public class GiftBuilder {
+	
+	public Gift crateGiftF (){
+	      Gift c = new Gift();
+	      c.adaugaProdus(new WhiteChocolate());
+	      c.adaugaProdus(new FemalePerfume());
+	      return c;
+	   }   
+
+	public Gift creeazaCadouB (){
+	      Gift gift = new Gift();
+	      gift.adaugaProdus(new DarkChocolate());
+	      gift.adaugaProdus(new MalePerfume());
+	      return gift;
+	   }  
+}

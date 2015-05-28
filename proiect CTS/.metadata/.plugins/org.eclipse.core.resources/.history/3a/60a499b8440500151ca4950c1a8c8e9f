@@ -1,0 +1,45 @@
+package ro.ase.csie.cts.test;
+
+import ro.ase.csie.cts.builder.Gift;
+import ro.ase.csie.cts.builder.GiftBuilder;
+import ro.ase.csie.cts.decorator.Chocolate;
+import ro.ase.csie.cts.decorator.FlavourDecorator;
+import ro.ase.csie.cts.decorator.Item;
+import ro.ase.csie.cts.decorator.Perfume;
+import ro.ase.csie.cts.template.BuyGiftF;
+import ro.ase.csie.cts.template.BuyGiftM;
+import ro.ase.csie.cts.template.ShoppingCart;
+
+public class Test {
+	
+	 public static void main(String[] args) {
+		  
+		 //builder
+	      GiftBuilder mealBuilder = new GiftBuilder();
+
+	      Gift femaleGift = mealBuilder.createGiftF();
+	      System.out.println("Gift for a lady");
+	      femaleGift.giftDescription();
+	      System.out.println("Total Cost: " + femaleGift.giftPrice());
+
+	      Gift maleGift = mealBuilder.createGiftM();
+	      System.out.println("\n\nGift for a man");
+	      maleGift.giftDescription();
+	      System.out.println("Total Cost: " + maleGift.giftPrice());
+	      
+	      //template
+	      ShoppingCart sc = new BuyGiftF();
+	      sc.shop();
+	      System.out.println();
+	      sc = new BuyGiftM();
+	      sc.shop();
+	      
+	      //decorator
+	      Item chocolate = new Chocolate();
+	      Item vanillaChocolate = new FlavourDecorator(new Chocolate());
+	      Item vanillaPerfume = new FlavourDecorator(new Perfume());
+	      
+	      System.out.println();
+	   }
+
+}

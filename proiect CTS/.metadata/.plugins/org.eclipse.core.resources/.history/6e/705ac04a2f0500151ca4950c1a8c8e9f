@@ -1,0 +1,13 @@
+package ro.ase.csie.cts.builder;
+
+public class CiocolataAlba extends Ciocolata {
+	 @Override
+	   public float pret() {
+	      return 25.0f;
+	   }
+
+	   public String nume() {
+	      return "Ciocolata Alba";
+	   }
+
+}

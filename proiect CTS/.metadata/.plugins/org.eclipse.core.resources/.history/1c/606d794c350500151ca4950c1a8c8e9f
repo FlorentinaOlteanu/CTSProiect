@@ -1,0 +1,23 @@
+package ro.ase.csie.cts.test;
+
+import ro.ase.csie.cts.builder.Gift;
+import ro.ase.csie.cts.builder.GiftBuilder;
+
+public class Test {
+	
+	 public static void main(String[] args) {
+		   
+	      GiftBuilder mealBuilder = new GiftBuilder();
+
+	      Gift femaleGift = mealBuilder.createGiftF();
+	      System.out.println("Gift for a lady");
+	      femaleGift.giftDescription();
+	      System.out.println("Total Cost: " + femaleGift.giftPrice());
+
+	      Gift maleGift = mealBuilder.createGiftM()
+	      System.out.println("\n\nGift for a man");
+	      maleGift.giftDescription();
+	      System.out.println("Total Cost: " + maleGift.giftPrice());
+	   }
+
+}

@@ -1,0 +1,19 @@
+package ro.ase.csie.cts.decorator;
+
+public class Flavour extends ItemDecorator {
+	
+	public Flavour(Item decoratedItem) {
+	      super(decoratedItem);		
+	   }
+
+	   @Override
+	   public void create() {
+	      decoratedItem.create();	       
+	      setChocolateKind(decoratedItem);
+	   }
+
+	   private void setChocolateKind(Item decoratedItem){
+	      System.out.println("Chocolate kind: white");
+	   }
+
+}

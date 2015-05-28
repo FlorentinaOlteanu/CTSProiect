@@ -1,0 +1,12 @@
+INDEX VERSION 1.126+E:\facultate\an III\Sem II\Calitate Software\proiect CTS\.metadata\.plugins\org.eclipse.jdt.core
+3237248257.index
+3515282563.index
+3348740376.index
+3402478412.index
+3086175639.index
+681664430.index
+788143149.index
+1586555042.index
+1427646221.index
+2823699257.index
+2963179918.index

@@ -1,0 +1,38 @@
+package ro.ase.csie.cts.builder;
+
+import ro.ase.csie.cts.template.ShoppingCart;
+
+public class GiftBuilder extends ShoppingCart {
+	
+	public Gift createGiftF (){
+	      /*Gift g = new Gift();
+	      g.addProduct(new WhiteChocolate());
+	      g.addProduct(new FemalePerfume());
+	      return g;*/
+		
+		//implementing template pattern
+		Gift g = new Gift();
+		@Override
+		void login(){
+			System.out.println("Connected!");
+		}
+		
+		@Override
+		searchForProduct();	
+		
+		@Override
+		addProductToCart();
+
+		@Override
+		logout();
+		
+		
+	   }   
+
+	public Gift createGiftM (){
+	      Gift gift = new Gift();
+	      gift.addProduct(new DarkChocolate());
+	      gift.addProduct(new MalePerfume());
+	      return gift;
+	   }  
+}

@@ -1,0 +1,13 @@
+package ro.ase.csie.cts.builder;
+
+public class ParfumF extends Parfum{
+	@Override
+	   public float pret() {
+	      return 120.0f;
+	   }
+
+	   public String nume() {
+	      return "Parfum pentru femei";
+	   }
+
+}

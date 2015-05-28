@@ -1,0 +1,10 @@
+package ro.ase.csie.cts.builder;
+
+public class Sticla implements Ambalaj {
+	
+	 public String ambalaj() {
+	      return "Sticla";
+	   }
+	
+
+}

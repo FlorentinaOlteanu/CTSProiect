@@ -1,0 +1,11 @@
+package ro.ase.csie.cts.builder;
+
+public abstract class Ciocolata implements Produs {
+	
+	public Ambalaj ambalaj() {
+	      return new Cutie();
+	   }
+
+	   public abstract float pret();
+
+}

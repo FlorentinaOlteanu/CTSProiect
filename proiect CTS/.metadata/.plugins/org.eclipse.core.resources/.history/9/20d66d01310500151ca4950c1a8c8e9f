@@ -1,0 +1,12 @@
+package ro.ase.csie.cts.builder;
+
+public class CadouBuilder {
+	
+	public Cadou creeazaCadouF (){
+	      Cadou c = new Cadou();
+	      c.adaugaProdus(new CiocolataAlba());
+	      c.addItem(new Coke());
+	      return meal;
+	   }   
+
+}

@@ -1,0 +1,6 @@
+package ro.ase.csie.cts.decorator;
+
+public interface Item {
+
+	void create();
+}

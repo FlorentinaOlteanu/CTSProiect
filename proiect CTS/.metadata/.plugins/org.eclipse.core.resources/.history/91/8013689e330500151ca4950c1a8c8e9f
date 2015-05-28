@@ -1,0 +1,30 @@
+package ro.ase.csie.cts.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Gift {
+	 private List<Product> produse = new ArrayList<Product>();
+	 
+	 public void adaugaProdus(Product product){
+	      produse.add(product);
+	   }
+	 
+	 public float costCadou(){
+	      float cost = 0.0f;
+	      
+	      for (Product product : produse) {
+	         cost += product.price();
+	      }		
+	      return cost;
+	   }
+
+	 public void detaliiCadou(){
+		   
+	      for (Product product : produse) {
+	         System.out.print("Produs : " + product.nume());
+	         System.out.print(", Ambalaj : " + product.packing().packing());
+	         System.out.println(", Pret : " + product.price());
+	      }		
+	   }	
+}

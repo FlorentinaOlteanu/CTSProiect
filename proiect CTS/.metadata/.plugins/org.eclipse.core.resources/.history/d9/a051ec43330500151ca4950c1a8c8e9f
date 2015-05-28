@@ -1,0 +1,8 @@
+package ro.ase.csie.cts.builder;
+
+public interface Produs {
+	public String nume();
+	   public Packing packing();
+	   public float pret();	
+
+}

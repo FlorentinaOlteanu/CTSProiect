@@ -1,0 +1,10 @@
+package ro.ase.csie.cts.builder;
+
+public class Bottle implements Packing {
+	
+	 public String packing() {
+	      return "Sticla";
+	   }
+	
+
+}
