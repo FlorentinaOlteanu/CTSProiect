@@ -23,4 +23,11 @@ public class JunitTest extends TestCase {
 		
 	}
 	
+	//unitTest pentru testare metoda totalCredit
+	////testare valori normale (intregi > 0)
+	public void testNormalValuesCredit(){
+		float credit=sc.totalCredit(56,2);
+		assertEquals("866", credit);
+	}
+	
 }

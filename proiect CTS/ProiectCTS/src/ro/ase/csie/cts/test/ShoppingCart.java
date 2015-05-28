@@ -18,8 +18,8 @@ public class ShoppingCart {
 		return amount=amount+price;		
 	}
 	
-	public void totalCredit(float price, int item){
-		credit=credit-(price*item);
+	public float totalCredit(float price, int item){
+		return credit=credit-(price*item);
 	}
 	
 	public float getAmount(){
