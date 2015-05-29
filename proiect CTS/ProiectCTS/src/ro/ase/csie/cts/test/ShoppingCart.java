@@ -1,31 +1,38 @@
 package ro.ase.csie.cts.test;
 
 public class ShoppingCart {
-	int item;
-	float amount;
-	float credit;
-	float price;
+	double item;
+	double amount;
+	double credit;
+	double price;
 	
-	public ShoppingCart(int item, float amount, float credit) {
-		super();
+	public ShoppingCart(double item, double amount, double credit, double price) {
+		
 		this.item = item;
 		this.amount = amount;
 		this.credit = credit;
+		this.price = price;
 	}
 	
-	public float addItem(float price)
+	public void addItem(double price)
 	{
-		return amount=amount+price;		
+		amount=amount+price;		
 	}
 	
-	public float totalCredit(float price, int item){
-		return credit=credit-(price*item);
+	public void totalCredit(double price, double item){
+		if(item>0.0)
+		credit=credit-(price*item);
+		else
+			credit= credit+(price*(-item));
 	}
 	
-	public float getAmount(){
+	public double getAmount(){
 		return amount;
 	}
 	
+	public double getCredit(){
+		return credit;
+	}
 	
 	
 	
